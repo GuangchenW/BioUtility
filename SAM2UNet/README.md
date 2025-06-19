@@ -8,4 +8,8 @@ This folder contains the scripts and helpers for training a UNet segmentation mo
 
 `sam2unet.ipynb`: Main training/test script.
 
+To use the python helper scripts, please install the dependencies via `pip install -r requirements.txt`.
+
+To use `sam2unet.ipynb`, run it in a Google Colab environment. Alternatively, run it in a local Jupyter Notebook environment. However, at least 16GB of GPU VRAM is recommended.
+
 See comments in scripts for detailed usage instructions.
