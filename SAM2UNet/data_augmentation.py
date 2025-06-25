@@ -55,7 +55,7 @@ if __name__ == "__main__":
 	
 	out_img_dir = os.path.join(base_dir, "AugmentedData/images")
 	out_label_dir = os.path.join(base_dir, "AugmentedData/labels")
-	os.makdirs(out_img_dir, exist_ok=True)
+	os.makedirs(out_img_dir, exist_ok=True)
 	os.makedirs(out_label_dir, exist_ok=True)
 	
 	counter = 0
