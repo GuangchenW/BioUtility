@@ -50,8 +50,8 @@ if __name__ == "__main__":
 	labels_dir = os.path.join(base_dir, "labels")
 
 	# Get all PNG files in the images and labels directories
-	image_files = [f for f in os.listdir(images_dir) if f.endswith(".png") and os.path.isfile(os.path.join(images_dir, f))]
-	label_files = [f for f in os.listdir(labels_dir) if f.endswith(".png") and os.path.isfile(os.path.join(labels_dir, f))]
+	image_files = [os.path.join(images_dir, f) for f in os.listdir(images_dir) if f.endswith(".png") and os.path.isfile(os.path.join(images_dir, f))]
+	label_files = [os.path.join(labels_dir, f) for f in os.listdir(labels_dir) if f.endswith(".png") and os.path.isfile(os.path.join(labels_dir, f))]
 	
 	out_img_dir = os.path.join(base_dir, "AugmentedData/images")
 	out_label_dir = os.path.join(base_dir, "AugmentedData/labels")
